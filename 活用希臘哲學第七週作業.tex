@@ -1,0 +1,52 @@
+\documentclass[a4paper,12pt]{article}
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{3}
+\newcounter{ZhRenew}
+\setcounter{ZhRenew}{1}
+\newcounter{SectionLanguage}
+\setcounter{SectionLanguage}{1}
+\input{/usr/share/LaTeX-ToolKit/template.tex}
+\begin{document}
+\title{活用希臘哲學第六週作業}
+\author{沈威宇}
+\date{\temtoday}
+\temdoc
+\section*{問題一}
+\subsection*{題目}
+我們如何運用歸納法來得出「太陽每天都從東方升起」這一普遍規律？請說明其過程。
+\subsection*{答案}
+「太陽每天都從東方升起」的推理過程可分為以下步驟：
+\ben
+\item 重複的經驗觀察：人們在長時間的生活經驗中，觀察到在過去無數天的觀察中，太陽皆從東方升起，未曾出現反例。
+\item 經驗的累積與概括：當觀察次數不斷增加，人們便傾向將這些個別事實概括為一個一般性陳述，即「太陽每天都從東方升起」。
+\item 形成普遍規律的信念：基於經驗的高度一致性與穩定性形成結論，但仍保留被未來經驗修正的可能。
+\een
+\section*{問題二}
+\subsection*{題目}
+亞里斯多德提到了演繹推理的三段論證，請參考「所有人都用兩腳走路，蘇格拉底是人，所以蘇格拉底用兩腳走路。」來舉出一個符合此形式的實際案例，並指出演繹推理和歸納法的相異之處。
+\subsection*{答案}
+\subsubsection*{三段論證}
+三段論證即一段符合以下形式的論證：
+\bit
+\item 大前提：
+\[\vdash\forall x\in S\colon\varphi(x).\]
+\item 小前提：
+\[\vdash y\in S.\]
+\item 結論：
+\[\vdash\varphi(y).\]
+\eit
+其本質上即是全稱消去推理規則：
+\[\frac{\forall x\in S\colon\varphi(x),\,y\in S}{\varphi(y)}\]
+的一個應用。
+\subsubsection*{符合三段論證形式的實際案例}
+一個實際案例如下：
+\bit
+\item 大前提：所有羊膜動物都具有脊索。
+\item 小前提：人是羊膜動物。
+\item 結論：人具有脊索。
+\eit
+\subsubsection*{演繹推理與歸納法的相異之處}
+演繹推理基於推理規則由普遍推理到個別，其結論在前提為真下必為真，不會被推翻。
+
+歸納法基於經驗充分性由個別歸納成普遍，其結論超出前提內容，可能被新經驗推翻。
+\end{document}
